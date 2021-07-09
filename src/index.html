@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News App</title>
+    <title>Новостник</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,7 +15,7 @@
 <body>
     <nav class="blue lighten-2">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">News App</a>
+            <a href="#" class="brand-logo">Новостник</a>
         </div>
     </nav>
         <div class="search-controls">
@@ -25,13 +25,25 @@
                         <div class="card">
                             <form name="newsControls">
                                 <div class="card-content">
-                                    <span class="card-title">Search news</span>
+                                    <span class="card-title">Поиск новостей</span>
                                     <div class="input-field">
                                         <select name="country" id="country">
-                                            <option value="ru">Russian</option>
-                                            <option value="us">United States</option>
+                                            <option value="ru">Россия</option>
+                                            <option value="us">США</option>
                                         </select>
-                                        <label>Choose your country</label>
+                                        <label>Выберите страну</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <select name="category" id="category">
+                                            <option value="general">Все категории</option>
+                                            <option value="business">Бизнес</option>
+                                            <option value="entertainment">Досуг</option>
+                                            <option value="health">Здоровье</option>
+                                            <option value="science">Наука</option>
+                                            <option value="sports">Спорт</option>
+                                            <option value="technology">Технологии</option>
+                                        </select>
+                                        <label>Выберите категорию</label>
                                     </div>
                                     <div class="input-field">
                                         <input
@@ -40,7 +52,7 @@
                                             class="autocomplete"
                                             name="search"
                                         />
-                                        <label for="autocomplete-input">Search</label>
+                                        <label for="autocomplete-input">Поиск</label>
                                     </div>
                                 </div>
                                 <div class="card-action">
@@ -49,7 +61,7 @@
                                         type="submit"
                                         name="action"
                                     >
-                                    Search
+                                    Поиск
                                     <i class="material-icons right">search</i>
                                     </button>
                                 </div>
