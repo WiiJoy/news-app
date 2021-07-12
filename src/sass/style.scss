@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import 'blocks/header';
+
+
+// Old style
+
 .news-container .card-title {
     background: rgba(0, 0, 0, 0.7);
 }
