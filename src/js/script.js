@@ -143,11 +143,12 @@ function renderNews(news) {
 
 // формирование разметки каждой новости
 function newsTemplate({urlToImage, title, url, description}) {
+
     return `
         <div class="col-s12">
             <div class="card">
                 <div class="card-image">
-                    <img src="${urlToImage}">
+                    <img src="${urlToImage || './img/news.jpg'}" alt="">
                     <span class="card-title">${title || ''}</span>
                 </div>
                 <div class="card-content">
