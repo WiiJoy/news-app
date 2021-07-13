@@ -5,6 +5,8 @@
         &-title {
             display: block;
             text-align: center;
+            font-size: 16px;
+            font-weight: 500;
         }
         &-inputs {
             margin-top: 15px;
@@ -16,10 +18,30 @@
             width: 30%;
             select {
                 width: 100%;
+                padding: 2px 5px;
+                margin-top: 5px;
+                font-size: 14px;
+                font-weight: 300;
+                option {
+                    font-weight: 300;
+                }
             }
             input {
                 width: 100%;
                 padding: 2px 5px;
+                margin: 5px auto;
+                box-sizing: border-box;
+                font-size: 14px;
+                font-weight: 300;
+            }
+            label {
+                display: block;
+                padding: 5px 0;
+                font-size: 14px;
+                font-weight: 300;
+                color: #fff;
+                text-align: center;
+                background-color: $main-blue;
             }
         }
 

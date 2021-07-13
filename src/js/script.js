@@ -74,12 +74,12 @@ const newsService = (function () {
   
 //  init selects
 document.addEventListener('DOMContentLoaded', function() {
-    M.AutoInit();
+    // M.AutoInit();
     loadNews(); // вызов, когда прогрузится весь DOM
 });
 
 // Elements
-const form = document.forms['newsControls'];
+const form = document.forms['main-form'];
 const countrySelect = form.elements['country'];
 const categorySelect = form.elements['category'];
 const searchInput = form.elements['search'];

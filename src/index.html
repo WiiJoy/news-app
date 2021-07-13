@@ -30,17 +30,18 @@
     <div class="search">
         <div class="container">
             <div class="search__card">
-                <form action="" class="search__form">
+                <form action="" name="main-form" class="search__form">
                     <span class="search__form-title">Поиск новостей</span>
                     <div class="search__form-inputs">
                         <div class="search__form-input">
+                            <label for="country">Страна</label>
                             <select name="country" id="country" class="search__form-country">
                                 <option value="ru">Россия</option>
                                 <option value="us">США</option>
                             </select>
-                            <label for="country">Выберите страну</label>
                         </div>
                         <div class="search__form-input">
+                            <label for="category">Категория</label>
                             <select name="category" id="category" class="search__form-category">
                                 <option value="general">Все категории</option>
                                 <option value="business">Бизнес</option>
@@ -50,16 +51,15 @@
                                 <option value="sports">Спорт</option>
                                 <option value="technology">Технологии</option>
                             </select>
-                            <label for="category">Выберите категорию</label>
                         </div>
                         <div class="search__form-input">
+                            <label for="everything-input">Поиск</label>
                             <input
                                 type="text"
                                 id="everything-input"
                                 class="search__form-text"
                                 name="search"
                             />
-                            <label for="everything-input">Поиск</label>
                         </div>
                     </div>
                     <div class="search__form-button">
@@ -69,7 +69,6 @@
                             name="action"
                         >
                             Поиск
-                            <i class="material-icons right">search</i>
                         </button>
                     </div>
                 </form>
@@ -80,7 +79,7 @@
 
 
 
-        <div class="search-controls">
+        <!-- <div class="search-controls">
             <div class="container">
                 <div class="row">
                     <div class="col s12 m6">
@@ -132,7 +131,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="news-container">
             <div class="container">
                 <div class="row grid-container"></div>
