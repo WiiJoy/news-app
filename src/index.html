@@ -7,7 +7,7 @@
     <title>Новостник</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -26,6 +26,60 @@
             <a href="#" class="brand-logo">Новостник</a>
         </div>
     </nav> -->
+
+    <div class="search">
+        <div class="container">
+            <div class="search__card">
+                <form action="" class="search__form">
+                    <span class="search__form-title">Поиск новостей</span>
+                    <div class="search__form-inputs">
+                        <div class="search__form-input">
+                            <select name="country" id="country" class="search__form-country">
+                                <option value="ru">Россия</option>
+                                <option value="us">США</option>
+                            </select>
+                            <label for="country">Выберите страну</label>
+                        </div>
+                        <div class="search__form-input">
+                            <select name="category" id="category" class="search__form-category">
+                                <option value="general">Все категории</option>
+                                <option value="business">Бизнес</option>
+                                <option value="entertainment">Досуг</option>
+                                <option value="health">Здоровье</option>
+                                <option value="science">Наука</option>
+                                <option value="sports">Спорт</option>
+                                <option value="technology">Технологии</option>
+                            </select>
+                            <label for="category">Выберите категорию</label>
+                        </div>
+                        <div class="search__form-input">
+                            <input
+                                type="text"
+                                id="everything-input"
+                                class="search__form-text"
+                                name="search"
+                            />
+                            <label for="everything-input">Поиск</label>
+                        </div>
+                    </div>
+                    <div class="search__form-button">
+                        <button
+                            class="btn btn_search"
+                            type="submit"
+                            name="action"
+                        >
+                            Поиск
+                            <i class="material-icons right">search</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
         <div class="search-controls">
             <div class="container">
                 <div class="row">
@@ -86,7 +140,7 @@
         </div>
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

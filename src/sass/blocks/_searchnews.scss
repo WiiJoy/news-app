@@ -1,0 +1,27 @@
+.search {
+    padding: 10px 0;
+    &__form {
+        position: relative;
+        &-title {
+            display: block;
+            text-align: center;
+        }
+        &-inputs {
+            margin-top: 15px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        &-input {
+            width: 30%;
+            select {
+                width: 100%;
+            }
+            input {
+                width: 100%;
+                padding: 2px 5px;
+            }
+        }
+
+    }
+}
