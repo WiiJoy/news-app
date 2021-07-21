@@ -7,78 +7,74 @@
     <title>Новостник</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
-    <nav class="blue lighten-2">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Новостник</a>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="header__logo">Новостник</a>
         </div>
-    </nav>
-        <div class="search-controls">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <div class="card">
-                            <form name="newsControls">
-                                <div class="card-content">
-                                    <span class="card-title">Поиск новостей</span>
-                                    <div class="input-field">
-                                        <select name="country" id="country">
-                                            <option value="ru">Россия</option>
-                                            <option value="us">США</option>
-                                        </select>
-                                        <label>Выберите страну</label>
-                                    </div>
-                                    <div class="input-field">
-                                        <select name="category" id="category">
-                                            <option value="general">Все категории</option>
-                                            <option value="business">Бизнес</option>
-                                            <option value="entertainment">Досуг</option>
-                                            <option value="health">Здоровье</option>
-                                            <option value="science">Наука</option>
-                                            <option value="sports">Спорт</option>
-                                            <option value="technology">Технологии</option>
-                                        </select>
-                                        <label>Выберите категорию</label>
-                                    </div>
-                                    <div class="input-field">
-                                        <input
-                                            type="text"
-                                            id="autocomplete-input"
-                                            class="autocomplete"
-                                            name="search"
-                                        />
-                                        <label for="autocomplete-input">Поиск</label>
-                                    </div>
-                                </div>
-                                <div class="card-action">
-                                    <button
-                                        class="btn waves-effect waves-light"
-                                        type="submit"
-                                        name="action"
-                                    >
-                                    Поиск
-                                    <i class="material-icons right">search</i>
-                                    </button>
-                                </div>
-                            </form>
+    </header>
+
+    <div class="search">
+        <div class="container">
+            <div class="search__card">
+                <form action="" name="main-form" class="search__form">
+                    <span class="search__form-title">Поиск новостей</span>
+                    <div class="search__form-inputs">
+                        <div class="search__form-input">
+                            <label for="country">Страна</label>
+                            <select name="country" id="country" class="search__form-country">
+                                <option value="ru">Россия</option>
+                                <option value="us">США</option>
+                            </select>
+                        </div>
+                        <div class="search__form-input">
+                            <label for="category">Категория</label>
+                            <select name="category" id="category" class="search__form-category">
+                                <option value="general">Все категории</option>
+                                <option value="business">Бизнес</option>
+                                <option value="entertainment">Досуг</option>
+                                <option value="health">Здоровье</option>
+                                <option value="science">Наука</option>
+                                <option value="sports">Спорт</option>
+                                <option value="technology">Технологии</option>
+                            </select>
+                        </div>
+                        <div class="search__form-input">
+                            <label for="everything-input">Поиск</label>
+                            <input
+                                type="text"
+                                id="everything-input"
+                                class="search__form-text"
+                                name="search"
+                            />
                         </div>
                     </div>
-                </div>
+                    <div class="search__form-button">
+                        <button
+                            class="btn btn_search"
+                            type="submit"
+                            name="action"
+                        >
+                            Поиск
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="news-container">
-            <div class="container">
-                <div class="row grid-container"></div>
-            </div>
-        </div>
+    </div>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <div class="news">
+        <div class="container">
+            <div class="news__wrapper"></div>
+        </div>
+    </div>
+        
     <script src="js/script.js"></script>
 </body>
 </html>

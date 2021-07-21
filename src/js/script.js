@@ -74,12 +74,12 @@ const newsService = (function () {
   
 //  init selects
 document.addEventListener('DOMContentLoaded', function() {
-    M.AutoInit();
+    // M.AutoInit();
     loadNews(); // вызов, когда прогрузится весь DOM
 });
 
 // Elements
-const form = document.forms['newsControls'];
+const form = document.forms['main-form'];
 const countrySelect = form.elements['country'];
 const categorySelect = form.elements['category'];
 const searchInput = form.elements['search'];
@@ -125,7 +125,9 @@ function onGetResponse(err, res) {
 
 // рендер получаемых новостей
 function renderNews(news) {
-    const newsContainer = document.querySelector('.news-container .row');
+    // const newsContainer = document.querySelector('.news-container .row');
+    const newsContainer = document.querySelector('.news__wrapper');
+
 
     // проверка наполненности контейнера для его очистки
     if (newsContainer.children.length) {
@@ -145,18 +147,16 @@ function renderNews(news) {
 function newsTemplate({urlToImage, title, url, description}) {
 
     return `
-        <div class="col-s12">
-            <div class="card">
-                <div class="card-image">
-                    <img src="${urlToImage || './img/news.jpg'}" alt="">
-                    <span class="card-title">${title || ''}</span>
-                </div>
-                <div class="card-content">
-                    <p>${description || ''}</p>
-                </div>
-                <div class="card-action">
-                    <a href="${url}">Read more</a>
-                </div>
+        <div class="news__item">
+            <div class="news__item-image">
+                <img src="${urlToImage || './img/news.jpg'}" alt="">
+                <span class="news__item-title">${title || ''}</span>
+            </div>
+            <div class="news__item-content">
+                <p>${description || ''}</p>
+            </div>
+            <div class="news__item-action">
+                <a href="${url}">Read more</a>
             </div>
         </div>
     `;

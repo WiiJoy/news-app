@@ -1,0 +1,9 @@
+.header {
+    background-color: $main-blue;
+    padding: 10px 20px;
+    &__logo {
+        font-size: 32px;
+        color: #fff;
+        text-decoration: none;
+    }
+}

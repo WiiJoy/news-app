@@ -1,0 +1,17 @@
+.btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 40px;
+    width: 130px;
+    background-color: $main-blue;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+    &:hover {
+        background-color: $submain-blue;
+        font-size: 18px;
+    }
+}
